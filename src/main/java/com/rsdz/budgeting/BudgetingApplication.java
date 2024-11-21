@@ -2,10 +2,16 @@ package com.rsdz.budgeting;
 
 import com.rsdz.budgeting.dao.CCTransactionDao;
 import com.rsdz.budgeting.entity.AmexTransaction;
+import com.rsdz.budgeting.entity.CCTransaction;
+import com.rsdz.budgeting.services.TransactionService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 @SpringBootApplication
 public class BudgetingApplication {
@@ -15,7 +21,7 @@ public class BudgetingApplication {
 	}
 
 	@Bean
-	public CommandLineRunner commandLineRunner (CCTransactionDao ccTransactionDao) {
+	public CommandLineRunner commandLineRunner (TransactionService transactionService) {
 		return (runner) -> {
 			//this.saveTransaction(ccTransactionDao);
 			//this.deleteTransactions(ccTransactionDao);

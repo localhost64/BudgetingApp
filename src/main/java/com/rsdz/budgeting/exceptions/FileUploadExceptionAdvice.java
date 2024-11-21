@@ -1,6 +1,6 @@
-package com.rsdz.finance.exceptions;
+package com.rsdz.budgeting.exceptions;
 
-import com.rsdz.finance.messages.ResponseMessage;
+import com.rsdz.budgeting.messages.ResponseMessage;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;

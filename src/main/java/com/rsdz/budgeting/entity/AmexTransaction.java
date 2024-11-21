@@ -16,7 +16,7 @@ public class AmexTransaction extends CCTransaction {
     @Column(name = "category")
     private String category;
 
-    @Column(name = "transaction_date")
+    @Column(name = "transaction_data")
     private String date;
 
     public AmexTransaction() {
